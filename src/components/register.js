@@ -57,7 +57,7 @@ export default function SignUp() {
 		console.log(formData);
 
 		axiosInstance
-			.post(`user/register/`, {
+			.post(`user/create/`, {
 				email: formData.email,
 				user_name: formData.username,
 				password: formData.password,
@@ -121,7 +121,7 @@ export default function SignUp() {
 						<Grid item xs={12}>
 							<FormControlLabel
 								control={<Checkbox value="allowExtraEmails" color="primary" />}
-								label="I want to receive marketing promotions and updates via email from Nexent."
+								label="I want to receive inspiration, marketing promotions and updates via email."
 							/>
 						</Grid>
 					</Grid>
